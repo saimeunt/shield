@@ -1,0 +1,57 @@
+<template name="teamMember">
+	<img class="img-circle" src={{profileUrl}}>
+	<h4><strong>{{name}}</strong></h4>
+	<a><i class="fa fa-fw fa-twitter"></i></a>
+	<a><i class="fa fa-fw fa-facebook"></i></a>
+	<a><i class="fa fa-fw fa-flickr"></i></a>
+	<p class="text-justify">{{description}}</p>
+</template>
+
+<template name="team">
+	<section class="team-section">
+		<div class="container text-center">
+			<h1>Meet our awesome team</h1>
+			<hr>
+			<div class="row">
+				{{#each teamMembers}}
+					<div class="col-md-3">
+						{{> teamMember}}
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="hiring">
+	<section class="hiring-section">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-8">
+					<img class="img-responsive center-block" src="/img/home/team/macbook.png">
+				</div>
+				<div class="col-md-4">
+					<h2>We Are Hiring!</h2>
+					<p class="text-justify">
+						Do you want to be one of use? Sure you want, because we are an awesome team !
+						Here we work hard every day to craft pixel perfect sites.
+					</p>
+					<a class="btn btn-success" href="#contact">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="divider3">
+	<section class="divider divider3">
+		<div class="container text-center">
+			<h1>Design solve problems</h1>
+			<hr>
+			<p class="lead">
+				From the purely practical to the richly philosophical, design is the solution to a host of
+				challenges.
+			</p>
+		</div>
+	</section>
+</template>

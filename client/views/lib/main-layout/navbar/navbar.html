@@ -1,0 +1,55 @@
+<template name="navbarHeader">
+	{{> BootstrapNavbarToggleButton}}
+	{{#linkTo route="home" queryParams=(queryParams "home") class="navbar-brand"}}
+		<i class="fa fa-lg fa-fw fa-shield"></i>
+	{{/linkTo}}
+</template>
+
+<template name="navbar">
+	{{#BootstrapNavbar class="navbar-inverse navbar-fixed-top" header="navbarHeader"}}
+		<ul class="nav navbar-nav">
+			<li class="active">
+				<a href="#home" class="hidden"></a>
+				{{#linkTo route="home" queryParams=(queryParams "home")}}
+					Home
+				{{/linkTo}}
+			</li>
+			<li>
+				<a href="#about" class="hidden"></a>
+				{{#linkTo route="home" queryParams=(queryParams "about")}}
+					About
+				{{/linkTo}}
+			</li>
+			<li>
+				<a href="#services" class="hidden"></a>
+				{{#linkTo route="home" queryParams=(queryParams "services")}}
+					Services
+				{{/linkTo}}
+			</li>
+			<li>
+				<a href="#team" class="hidden"></a>
+				{{#linkTo route="home" queryParams=(queryParams "team")}}
+					Team
+				{{/linkTo}}
+			</li>
+			<li>
+				<a href="#portfolio" class="hidden"></a>
+				{{#linkTo route="home" queryParams=(queryParams "portfolio")}}
+					Portfolio
+				{{/linkTo}}
+			</li>
+			<li>
+				<a href="#blog" class="hidden"></a>
+				{{#linkTo route="home" queryParams=(queryParams "blog")}}
+					Blog
+				{{/linkTo}}
+			</li>
+			<li>
+				<a href="#contact" class="hidden"></a>
+				{{#linkTo route="home" queryParams=(queryParams "contact")}}
+					Contact
+				{{/linkTo}}
+			</li>
+		</ul>
+	{{/BootstrapNavbar}}
+</template>

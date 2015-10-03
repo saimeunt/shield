@@ -1,0 +1,75 @@
+<template name="header">
+	<header>
+		<div class="jumbotron">
+			<div class="container text-center">
+				<h1><i class="fa fa-2x fa-fw fa-shield"></i></h1>
+				<h2>A Bootstrap 3 One Page Theme.</h2>
+				<h3>Exclusive for BlackTie.co.</h3>
+			</div>
+		</div>
+	</header>
+</template>
+
+<template name="features">
+	<section class="features-section">
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-4x fa-fw fa-mobile"></i>
+					<h2>Bootstrap 3</h2>
+					<p>
+						Shield Theme is powered by Bootstrap 3, the incredible Mobile First Framework is the
+						best option to run your website.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-4x fa-fw fa-eye"></i>
+					<h2>Retina Ready</h2>
+					<p>
+						You can use this theme with your iPhone, iPad or MacBook Pro.<br>
+						This theme is retina ready and that is awesome.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-4x fa-fw fa-heart"></i>
+					<h2>Crafted with Love</h2>
+					<p>
+						We don't make sites, we craft themes with love &amp; passion.<br>
+						That is our most valued secret. We only do thing that we love.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</template>
+
+<template name="home">
+	<div id="home">
+		{{> header}}
+		{{> features}}
+	</div>
+	<div id="about">
+		{{> about}}
+		{{> divider1}}
+	</div>
+	<div id="services">
+		{{> services}}
+		{{> divider2}}
+	</div>
+	<div id="team">
+		{{> team}}
+		{{> hiring}}
+		{{> divider3}}
+	</div>
+	<div id="portfolio">
+		{{> portfolio}}
+		{{> divider4}}
+	</div>
+	<div id="blog">
+		{{> blog}}
+		{{> divider5}}
+	</div>
+	<div id="contact">
+		{{> contact}}
+	</div>
+</template>

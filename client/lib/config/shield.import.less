@@ -1,0 +1,74 @@
+// Shield Theme
+
+// FONTS
+@import url("//fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("//fonts.googleapis.com/css?family=Raleway:300,400,700");
+
+// BODY
+body {
+	font-weight: 300;
+}
+
+// HEADINGS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+}
+
+// ANCHORS
+a {
+	cursor:pointer;
+	transition-property: color, background-color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+	//
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+// HORIZONTAL RULE
+hr {
+	width: 50%;
+	border-top: 2px solid #ccc;
+}
+
+// SECTION
+section {
+	margin-bottom: 30px;
+}
+
+// DIVIDER
+.divider {
+	color: #fff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	border-bottom: 2px solid #e6eaed;
+	min-height: 480px;
+	background-position: center;
+	background-size: cover;
+	text-shadow: 1px 1px 1px #000;
+	//
+	h1 {
+		color: #fff;
+	}
+	//
+	hr {
+		border-top-color: #fff;
+		border-bottom: 1px solid #000;
+		border-right: 1px solid #000;
+	}
+}
+
+// STYLE
+@import "{}/client/views/lib/main-layout/footer/footer.import.less";
+@import "{}/client/views/home/home.import.less";
+@import "{}/client/views/home/about/about.import.less";
+@import "{}/client/views/home/services/services.import.less";
+@import "{}/client/views/home/team/team.import.less";
+@import "{}/client/views/home/portfolio/portfolio.import.less";
+@import "{}/client/views/home/blog/blog.import.less";

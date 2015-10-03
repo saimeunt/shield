@@ -1,0 +1,38 @@
+<template name="portfolioItem">
+	<figure class="portfolio-item">
+		<img class="img-responsive" src="{{imageUrl}}" alt="{{title}}">
+		<figcaption class="bg-primary">
+			<h6>{{title}}</h6>
+			<a href="{{imageUrl}}" class="btn btn-success btn-sm pull-right"
+					data-lightbox="portfolio" data-title="{{description}}">
+				Take a Look
+			</a>
+		</figcaption>
+	</figure>
+</template>
+
+<template name="portfolio">
+	<section>
+		<div class="container">
+			<h1 class="text-center">We create cool stuff</h1>
+			<hr>
+			{{#BootstrapGrid items=portfolioItems columnsCount="3" breakpointSize="sm"}}
+				{{> portfolioItem}}
+			{{/BootstrapGrid}}
+		</div>
+	</section>
+</template>
+
+<template name="divider4">
+	<section class="divider divider4">
+		<div class="container text-center">
+			<h1>Design creates emotional connection</h1>
+			<hr>
+			<p class="lead">
+				There’s more to design than meets the eye.<br>
+				It’s when it meets the heart that design creates a meaningful,
+				lasting connection with the audience.
+			</p>
+		</div>
+	</section>
+</template>
